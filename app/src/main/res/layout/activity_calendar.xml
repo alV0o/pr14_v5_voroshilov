@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_calendar"
+    android:columnCount="1"
+    android:rowCount="3"
+    android:background="@color/green">
+
+    <GridLayout
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calendar"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:src="@drawable/avatarr"
+            android:background="@drawable/backbutton"
+            android:layout_marginLeft="147dp"
+            />
+    </GridLayout>
+
+    <CalendarView
+        android:layout_gravity="center"
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityHeading="true"
+        android:dateTextAppearance="@style/TextSizeLar"
+        android:minDate="05/13/2025"
+        android:selectedWeekBackgroundColor="@color/gray"
+        android:theme="@style/CalendarViewCustom"
+        android:weekDayTextAppearance="@style/CalendarViewWeekCustomText"
+        android:weekNumberColor="#F44336"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="273dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="36dp"
+        android:background="@drawable/bottombarback">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/list"
+                android:background="@color/lightgreen"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/alarm"
+                android:background="@color/lightgreen"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:onClick="Alarm"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/calendar"
+                android:background="@color/lightgreen"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/settings"
+                android:background="@color/lightgreen"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:onClick="Settings"
+                />
+
+        </LinearLayout>
+    </GridLayout>
+
+
+</GridLayout>

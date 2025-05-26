@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_alarm"
+    android:background="@color/green">
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bud"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:src="@drawable/avatarr"
+            android:background="@drawable/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time1"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="100dp"
+            />
+
+        <Switch
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:background="@drawable/switchbutton"
+            android:paddingRight="36dp"
+            android:thumbTint="@color/white"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="169dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time2"
+            android:textColor="@color/white"
+            android:textSize="48sp"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="-5dp"
+            android:layout_marginRight="100dp"
+            />
+
+        <Switch
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:background="@drawable/switchbutton2"
+            android:checked="true"
+            android:thumbTint="@color/white"
+            android:paddingRight="12dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="504dp"
+        android:background="@drawable/button"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="@string/addbud"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_marginLeft="36dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/bottombarback">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/list"
+                android:background="@color/lightgreen"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/alarm"
+                android:background="@color/lightgreen"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/calendar"
+                android:background="@color/lightgreen"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:onClick="Calendar"
+                />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/settings"
+                android:background="@color/lightgreen"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:onClick="Settings"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

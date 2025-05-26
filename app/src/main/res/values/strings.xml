@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">pr14_v5_voroshilov</string>
+    <string name="reg">Регистрация</string>
+    <string name="nameuser">Имя пользователя</string>
+    <string name="email">Адрес электронной почты</string>
+    <string name="password">Пароль</string>
+    <string name="settings">Настройки</string>
+    <string name="profile">Профиль пользователя</string>
+    <string name="date">Дата и время</string>
+    <string name="sound">Настройки звука</string>
+    <string name="update">Проверить обновления</string>
+    <string name="calendar">Календарь</string>
+    <string name="bud">Будильник</string>
+    <string name="time1">07:30</string>
+    <string name="time2">08:00</string>
+    <string name="addbud">Добавить будильник</string>
+</resources>

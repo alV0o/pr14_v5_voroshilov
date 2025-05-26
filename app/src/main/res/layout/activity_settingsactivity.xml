@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_settingsactivity"
+    android:background="@color/green">
+    <TableRow
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:layout_marginTop="23dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginRight="160dp"
+            />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:src="@drawable/avatarr"
+            android:background="@drawable/backbutton"
+            android:layout_marginTop="17dp"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_height="match_parent"
+            android:src="@drawable/strelka"
+            android:background="@color/green"
+
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_height="match_parent"
+            android:src="@drawable/strelka"
+            android:background="@color/green"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sound"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_height="match_parent"
+            android:src="@drawable/strelka"
+            android:background="@color/green"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:layout_height="match_parent"
+            android:src="@drawable/strelka"
+            android:background="@color/green"
+            />
+    </TableRow>
+
+    <LinearLayout
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="36dp"
+        android:background="@drawable/bottombarback"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="315dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightgreen"
+                android:src="@drawable/list" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightgreen"
+                android:src="@drawable/alarm"
+                android:onClick="Alarm"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightgreen"
+                android:src="@drawable/calendar"
+                android:onClick="Calendar"/>
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@color/lightgreen"
+                android:src="@drawable/settings" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</TableLayout>
